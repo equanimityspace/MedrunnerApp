@@ -1,5 +1,8 @@
 const { app, BrowserWindow } = require('electron')
 const DiscordRPC = require('discord-rpc')
+require('dotenv').config()
+
+const clientId = process.env.CLIENT_ID
 
 const rpc = new DiscordRPC.Client({
     transport: 'ipc'
@@ -31,7 +34,7 @@ rpc.on('ready', () => {
 });
 
 rpc.login({
-    clientId: '1320075367356170358'
+    clientId: clientId
 })
 
 app.whenReady().then(() => {
