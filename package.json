@@ -1,5 +1,5 @@
 {
-  "name": "medrunnerapp",
+  "name": "medapp",
   "version": "0.1.0",
   "main": "main.js",
   "scripts": {
@@ -67,6 +67,7 @@
     "type-fest": "^0.13.1",
     "undici-types": "^6.19.8",
     "universalify": "^0.1.2",
+    "url": "^0.11.4",
     "wrappy": "^1.0.2",
     "yauzl": "^2.10.0"
   },
