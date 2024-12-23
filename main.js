@@ -69,9 +69,11 @@ app.whenReady().then(() => {
         }
     });
     
+    // lift off!!
     createWindow()    
 })
 
+// includes support for mac, just in case...
 app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') app.quit()
 })
