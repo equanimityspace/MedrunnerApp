@@ -2,9 +2,8 @@ const { app, BrowserWindow, session, webContents, ipcMain, WebContentsView, dial
 const DiscordRPC = require('discord-rpc')
 const path = require('path')
 const { URL } = require('url')
-require('dotenv').config()
 
-const clientId = process.env.CLIENT_ID
+const clientId = '1320075367356170358'
 
 // TODO limit webpage navigation (once we figure out what to nav to)
 
@@ -30,6 +29,7 @@ function createWindow () {
     mainWindow.once('ready-to-show', () => {
         mainWindow.show()
     })
+    mainWindow.setIcon('assets/medapplogo.png')
 
     // Load med-tools first,
     medTools = new WebContentsView()
