@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unofficial Medrunner App by Waerren</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="navbar">
+    <div class="nav-button" id="medrunnerButton">Medrunner Staff Portal</div>
+    <div class="nav-button" id="medToolsButton">Med Tools</div>
+  </div>
+
+  <script>
+    const medrunnerView = document.getElementById('medrunnerButton');
+    const medTools = document.getElementById('medToolsButton');
+
+    medrunnerButton.addEventListener('click', () => {
+      window.electronAPI.showView(1);
+    });
+
+    medToolsButton.addEventListener('click', () => {
+      window.electronAPI.showView(2);
+    });
+  </script>
+</body>
+</html>
